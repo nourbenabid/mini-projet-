@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-
+<html lang="fr">
 <head>
-    <title>Mes Projets   </title>
+    <meta charset="UTF-8">
     <main>
         <p><a href="parcours.html">Retour à la Page parcours</a></p>
         <a href="contact.html">Aller à la page suivante</a>
-        <link rel="stylesheet" href="experiences.css">
-        
-       
+    </main>
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="experiences.css">
+    <style>
+        .project img {
+            width: 10%;
+            animation: pulse 1s infinite alternate ease-in-out;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
 </head>
-
-    
-
 <body>
+    <script>
+        window.onload = function() {
+            alert("Bienvenue sur cette page !");
+            animateImages();
+        };
+
+        function animateImages() {
+            const images = document.querySelectorAll('.project img');
+            images.forEach(image => {
+                image.style.transform = 'scale(1.1)';
+            });
+        }
+    </script>
   
-    <h1 style="color:blue;">Mes Projets  </h1>
+    <h1 style="color:blue;">Mes Projets</h1>
     
     <div class="project">
-        <h2>°Projet 1:chatboat </h2>
-        <p> Ce chatbot peut aider les utilisateurs à trouver des vols en fonction de critères tels que la destination, les dates de voyage, les préférences de compagnie aérienne..Technologies Utilisées :
-
+        <h2>°Projet 1: Chatbot</h2>
+        <p> Ce chatbot peut aider les utilisateurs à trouver des vols en fonction de critères tels que la destination, les dates de voyage, les préférences de compagnie aérienne... Technologies Utilisées :
             Langages de programmation : HTML, CSS, JavaScript</p>
+        <img src="https://botnation.ai/site/wp-content/uploads/2022/03/outil-chatbot-1400x800.png" alt="Chatbot">
     </div>
-    <article>
-        <p>
-        
-        <img src="https://botnation.ai/site/wp-content/uploads/2022/03/outil-chatbot-1400x800.png"style="width: 10%;">
-    </article>
+
     <div class="project">
-        <h2>°Projet 2:bookstore </h2>
-        <p>L'objectif principal du Bookstore en ligne est de créer une plateforme  fonctionnelle qui permet aux passionnés de livres de découvrir de nouveaux titres,  et de faire des achats de manière simple et sécurisée depuis chez eux.Technologies Utilisées :
-
+        <h2>°Projet 2: Bookstore</h2>
+        <p>L'objectif principal du Bookstore en ligne est de créer une plateforme fonctionnelle qui permet aux passionnés de livres de découvrir de nouveaux titres et de faire des achats de manière simple et sécurisée depuis chez eux. Technologies Utilisées :
             Langages de programmation : HTML, CSS, JavaScript</p>
-            <img src="https://morecustomersapp.com/wp-content/uploads/2022/05/Online-Book-Store-1.png"style="width: 10%;">
+        <img src="https://morecustomersapp.com/wp-content/uploads/2022/05/Online-Book-Store-1.png" alt="Bookstore">
     </div>
-    
-    
-    
 </body>
 </html>
+

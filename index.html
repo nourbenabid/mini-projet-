@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <title>Accueil</title>
     <link rel="stylesheet" href="index.css">
-
+    <script>
+       
+        window.onload = function() {
+           
+            alert("bonjour,vous etes les bienvenus!");
+        };
+    </script>
 </head>
 
 <body>
+    <button class="button" onclick="allerVers('index.html')">Accueil</button>
+    <button class="button" onclick="allerVers('parcours.html')">Parcours académiques</button>
+    <button class="button" onclick="allerVers('experiences.html')">Expériences</button>
+    <button class="button" onclick="allerVers('contact.html')">Contact</button>
+     
+    <script>
+        // Fonction pour rediriger vers une nouvelle page au clic
+        function allerVers(url) {
+            window.location.href = url;
+        }
+       
+    </script>
     
     <p><a href="acceuil.html"></a></p>
     <a href="parcours.html">Aller à la page suivante</a>
     <header>
 
         <h1>Bienvenue </h1>
-        
             <p>
-
             Nour ben abid 
             <br>
             Etudiante en génie informatique à ESPRIT 
@@ -27,14 +43,6 @@
             
         </article>
         
-        <nav>
-            <ul>
-                <li><a href="index.html">accueil</a></li>
-                <li><a href="parcours.html">Parcours académiques</a></li>
-                <li><a href="experiences.html">Expériences</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <footer>
         <p>&copy; 2023 </p>
